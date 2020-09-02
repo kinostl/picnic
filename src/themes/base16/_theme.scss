@@ -1,0 +1,30 @@
+// Top level variables for Picnic CSS
+// Note: some others are available under each specific plugin
+
+@import 'colors'; 
+@import './Base16-Sass/scss-bare/_base16-default-dark.scss';
+
+$picnic-white: $base00 !default;
+$picnic-black: $base05 !default;
+$picnic-primary: $base0D !default;
+$picnic-success: $base0B !default;
+$picnic-warning: $base09 !default;
+$picnic-error: $base08 !default;
+$picnic-dull: $base03 !default;
+$picnic-color-variation: 10% !default;
+$picnic-transparency: .2 !default;
+
+
+// Spaces
+$picnic-separation: .6em !default;
+$picnic-breakpoint: 60em !default;
+
+
+// Shapes
+$picnic-radius: .2em !default;
+$picnic-border: 1px solid $picnic-dull !default;
+$picnic-shadow: 0 0 .2em rgba($picnic-dull, $picnic-transparency) !default;
+$picnic-overlay: rgba($picnic-black, $picnic-transparency);
+
+// Transitions
+$picnic-transition: all .3s;
