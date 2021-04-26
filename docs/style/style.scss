@@ -11,9 +11,9 @@ $picnic-normalize-ie: false;
 // You need to import this first
 @import "font/fontello";
 
-@import "../vendor/base16-styles/css-variables/base16-gruvbox-dark-hard.css"
+@import "../vendor/base16-styles/css-variables/base16-default-dark.css"
   screen;
-@import "../vendor/base16-styles/css-variables/base16-gruvbox-light-hard.css"
+@import "../vendor/base16-styles/css-variables/base16-default-light.css"
   screen and (prefers-color-scheme: light);
 
 // Normalize.css (external library)

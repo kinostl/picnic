@@ -464,14 +464,14 @@ button,
   :hover[type=submit], .dropimage:hover, button:focus,
   .button:focus,
   :focus[type=submit], .dropimage:focus {
-    box-shadow: inset 0 0 0 99em rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 0 0 99em rgba(255, 255, 255, 0.2);
     border: 0; }
   button.pseudo:hover,
   .pseudo.button:hover,
   .pseudo:hover[type=submit], .pseudo.dropimage:hover, button.pseudo:focus,
   .pseudo.button:focus,
   .pseudo:focus[type=submit], .pseudo.dropimage:focus {
-    box-shadow: inset 0 0 0 99em rgba(0, 0, 0, 0.15); }
+    box-shadow: inset 0 0 0 99em var(--base01); }
   button.active,
   .active.button,
   .active[type=submit], .active.dropimage, button:active,
@@ -479,7 +479,7 @@ button,
   :active[type=submit], .dropimage:active, button.pseudo:active,
   .pseudo.button:active,
   .pseudo:active[type=submit], .pseudo.dropimage:active {
-    box-shadow: inset 0 0 0 99em rgba(0, 0, 0, 0.3); }
+    box-shadow: inset 0 0 0 99em rgba(0, 0, 0, 0.2); }
   button[disabled],
   .button[disabled],
   [disabled][type=submit], .dropimage[disabled] {
@@ -489,7 +489,7 @@ button,
 
 :checked + .toggle,
 :checked + .toggle:hover {
-  box-shadow: inset 0 0 0 99em rgba(0, 0, 0, 0.3); }
+  box-shadow: inset 0 0 0 99em rgba(0, 0, 0, 0.2); }
 
 [type] + .toggle {
   padding: 0.3em 0.9em;
@@ -2257,7 +2257,7 @@ nav .burger {
     color: transparent;
     width: 100%;
     border-radius: 0;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.2);
     transition: all 0.5s ease; }
   nav .show ~ .menu {
     width: 70%;
@@ -2439,7 +2439,7 @@ select.stack {
     position: fixed;
     margin: 0;
     border-radius: 0;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.2);
     transition: all 0.3s;
     z-index: 100000; }
     .modal .overlay:before, .modal .overlay:after {
