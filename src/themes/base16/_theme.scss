@@ -2,15 +2,19 @@
 // Note: some others are available under each specific plugin
 
 // Colors (from /themes/default/colors)
-$picnic-white: var(--base00) !default;
-$picnic-black: var(--base05) !default;
+$picnic-background: var(--base00) !default;
+$picnic-background-alt: var(--base01) !default;
+$picnic-foreground: var(--base05) !default;
+$picnic-foreground-alt: var(--base06) !default;
 $picnic-primary: var(--base0D) !default;
 $picnic-success: var(--base0B) !default;
 $picnic-warning: var(--base09) !default;
 $picnic-error: var(--base08) !default;
 $picnic-dull: var(--base03) !default;
+$picnic-white: #fff;
+$picnic-black: #000;
 $picnic-color-variation: 10% !default;
-$picnic-transparency: 0.2 !default;
+$picnic-transparency: 0.3 !default;
 
 // Spaces
 $picnic-separation: 0.6em !default;
@@ -19,8 +23,10 @@ $picnic-breakpoint: 60em !default;
 // Shapes
 $picnic-radius: 0.2em !default;
 $picnic-border: 1px solid $picnic-dull !default;
-$picnic-shadow: 0 0 0.2em rgba($picnic-dull, $picnic-transparency) !default;
+$picnic-shadow: 0 0 0.2em var(--base04) !default;
 $picnic-overlay: rgba($picnic-black, $picnic-transparency);
 
 // Transitions
 $picnic-transition: all 0.3s;
+
+// Shades

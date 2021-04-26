@@ -1,0 +1,3 @@
+[submodule "docs/vendor/base16-styles"]
+	path = docs/vendor/base16-styles
+	url = git@github.com:samme/base16-styles.git

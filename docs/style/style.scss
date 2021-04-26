@@ -9,13 +9,15 @@ $picnic-normalize-ie: false;
 
 // Get the icons from fontello
 // You need to import this first
-@import 'font/fontello';
+@import "font/fontello";
 
-// Imports the base variable styles
-@import '../../src/themes/default/theme';
+@import "../vendor/base16-styles/css-variables/base16-gruvbox-dark-hard.css"
+  screen;
+@import "../vendor/base16-styles/css-variables/base16-gruvbox-light-hard.css"
+  screen and (prefers-color-scheme: light);
 
 // Normalize.css (external library)
-@import '../../src/picnic';
+@import "../../src/picnic";
 
 // // Generic styles for things like <body>, <a> and others
 // // It also overwrites normalize.css a bit
@@ -47,12 +49,9 @@ $picnic-normalize-ie: false;
 // @import '../../src/plugins/tabs/plugin';
 // @import '../../src/plugins/tooltip/plugin';
 
-
-
 // Our own plugins, extending some of picnic's
-@import 'hero';
-@import 'visual';
-
+@import "hero";
+@import "visual";
 
 // Make a title and its text closer together
 h1,
@@ -64,14 +63,13 @@ h4 {
   line-height: 1;
 }
 
-
 // Structure
 html,
 body,
 main {
   display: block;
-  color: #333;
-  background: #fff;
+  color: $picnic-foreground;
+  background: $picnic-background;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -88,26 +86,24 @@ main .visual:last-child {
   max-width: 960px;
   width: 100%;
   margin: 100px auto 500px;
-  }
+}
 
 nav .brand:hover,
 nav .brand:active {
   background: none;
   box-shadow: none;
-  }
-
-
+}
 
 // Display the grid with colors
 .flex.demo > * > * {
   display: block;
-  padding: .3em 0;
-  background: $green;
+  padding: 0.3em 0;
+  background: $picnic-success;
   text-align: center;
 }
 
 .flex.demo > *:nth-child(2n) > * {
-  background: $aqua;
+  background: $picnic-primary;
 }
 
 .test > h2 {
@@ -136,7 +132,6 @@ section.row aside {
   }
 }
 
-
 pre {
   width: 100%;
 
@@ -145,11 +140,9 @@ pre {
   }
 }
 
-
 comment-box.visual {
   margin-top: 60px;
 }
-
 
 // $browser-color: #ccc;
 // $browser-text: #333;

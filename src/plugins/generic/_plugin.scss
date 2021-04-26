@@ -10,10 +10,10 @@ body {
 }
 
 body {
-  color: $picnic-black;
+  color: $picnic-foreground;
   font-size: 1.1em;
   line-height: 1.5;
-  background: $picnic-white;
+  background: $picnic-background;
 }
 
 main {
@@ -64,7 +64,7 @@ pre {
 blockquote {
   padding: 0 0 0 1em;
   margin: 0 0 0 .1em;
-  box-shadow: inset 5px 0 rgba($picnic-black, .3);
+  box-shadow: inset 5px 0 $picnic-dull;
 }
 
 label {

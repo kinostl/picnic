@@ -21,7 +21,7 @@ $picnic-checkbox-radius: $picnic-radius !default;
     }
 
   &:checked + .checkable:after {
-    color: $picnic-black;
+    color: $picnic-foreground;
     background: none;
     transform: translateY(-50%);
     transition: $picnic-transition;

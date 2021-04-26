@@ -48,7 +48,7 @@ $picnic-radio-border: 1px solid $picnic-dull !default;
     }
 
   &:checked + .checkable:after {
-    background: $picnic-black;
+    background: $picnic-foreground;
     transform: scale(.5) translateY(-100%);
     }
   }
