@@ -472,12 +472,59 @@ button,
   .button:active,
   :active[type=submit], .dropimage:active {
     box-shadow: inset 0 0 0 99em rgba(0, 0, 0, 0.2); }
+  @media (prefers-color-scheme: light) {
+    button.pseudo:hover,
+    .pseudo.button:hover,
+    .pseudo:hover[type=submit], .pseudo.dropimage:hover, button.pseudo:focus,
+    .pseudo.button:focus,
+    .pseudo:focus[type=submit], .pseudo.dropimage:focus {
+      box-shadow: inset 0 0 0 99em var(--base01); }
+    button.pseudo:active,
+    .pseudo.button:active,
+    .pseudo:active[type=submit], .pseudo.dropimage:active {
+      box-shadow: inset 0 0 0 99em rgba(0, 0, 0, 0.2); } }
   button[disabled],
   .button[disabled],
   [disabled][type=submit], .dropimage[disabled] {
     cursor: default;
     box-shadow: none;
     background: var(--base03); }
+
+@media (prefers-color-scheme: light) {
+  nav button.pseudo:hover,
+  nav .pseudo.button:hover,
+  nav .pseudo:hover[type=submit], nav .pseudo.dropimage:hover, nav button.pseudo:focus,
+  nav .pseudo.button:focus,
+  nav .pseudo:focus[type=submit], nav .pseudo.dropimage:focus,
+  .card button.pseudo:hover,
+  .modal .overlay ~ * button.pseudo:hover,
+  .card .pseudo.button:hover,
+  .modal .overlay ~ * .pseudo.button:hover,
+  .card .pseudo:hover[type=submit],
+  .modal .overlay ~ * .pseudo:hover[type=submit],
+  .card .pseudo.dropimage:hover,
+  .modal .overlay ~ * .pseudo.dropimage:hover,
+  .card button.pseudo:focus,
+  .modal .overlay ~ * button.pseudo:focus,
+  .card .pseudo.button:focus,
+  .modal .overlay ~ * .pseudo.button:focus,
+  .card .pseudo:focus[type=submit],
+  .modal .overlay ~ * .pseudo:focus[type=submit],
+  .card .pseudo.dropimage:focus,
+  .modal .overlay ~ * .pseudo.dropimage:focus {
+    box-shadow: inset 0 0 0 99em rgba(0, 0, 0, 0.2); }
+  nav button.pseudo:active,
+  nav .pseudo.button:active,
+  nav .pseudo:active[type=submit], nav .pseudo.dropimage:active,
+  .card button.pseudo:active,
+  .modal .overlay ~ * button.pseudo:active,
+  .card .pseudo.button:active,
+  .modal .overlay ~ * .pseudo.button:active,
+  .card .pseudo:active[type=submit],
+  .modal .overlay ~ * .pseudo:active[type=submit],
+  .card .pseudo.dropimage:active,
+  .modal .overlay ~ * .pseudo.dropimage:active {
+    box-shadow: inset 0 0 0 99em rgba(0, 0, 0, 0.4); } }
 
 :checked + .toggle,
 :checked + .toggle:hover {
