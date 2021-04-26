@@ -2198,7 +2198,7 @@ nav {
   right: 0;
   height: 3em;
   padding: 0 0.6em;
-  background: var(--base00);
+  background: var(--base01);
   box-shadow: 0 0 0.2em var(--base04);
   z-index: 10000;
   transition: all .3s;
@@ -2339,7 +2339,7 @@ select.stack {
   border: 1px solid var(--base03);
   overflow: hidden;
   text-align: left;
-  background: var(--base00);
+  background: var(--base01);
   margin-bottom: 0.6em;
   padding: 0;
   transition: all .3s ease; }
