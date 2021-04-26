@@ -6,13 +6,10 @@ $picnic-card-shadow: none !default;
 $picnic-card-border: $picnic-border !default;
 $picnic-card-radius: $picnic-radius !default;
 
-
-
 // Styles
 
 // http://8gramgorilla.com/mastering-sass-extends-and-placeholders/
 %card {
-
   position: relative;
   box-shadow: $picnic-card-shadow;
   border-radius: $picnic-card-radius;
@@ -22,7 +19,7 @@ $picnic-card-radius: $picnic-radius !default;
   background: $picnic-background-alt;
   margin-bottom: $picnic-separation;
   padding: 0;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 
   &.hidden,
   :checked + & {
@@ -46,11 +43,11 @@ $picnic-card-radius: $picnic-radius !default;
   header,
   section,
   > p {
-    padding: .6em .8em;
-    }
+    padding: 0.6em 0.8em;
+  }
 
   section {
-    padding: .6em .8em 0;
+    padding: 0.6em 0.8em 0;
   }
 
   hr {
@@ -75,58 +72,58 @@ $picnic-card-radius: $picnic-radius !default;
       line-height: 1;
       display: inline-block;
       vertical-align: text-bottom;
-      }
+    }
 
     &:last-child {
       border-bottom: 0;
-      }
     }
+  }
 
   footer {
-    padding: .8em;
-    }
+    padding: 0.8em;
+  }
 
   p {
     margin: $picnic-separation / 2 0;
 
     &:first-child {
       margin-top: 0;
-      }
+    }
 
     &:last-child {
       margin-bottom: 0;
-      }
     }
+  }
 
   > p {
     margin: 0;
     padding-right: 2.5em;
-    }
+  }
 
   .close {
     position: absolute;
-    top: .4em;
-    right: .3em;
+    top: 0.4em;
+    right: 0.3em;
     font-size: 1.2em;
-    padding: 0 .5em;
+    padding: 0 0.5em;
     cursor: pointer;
     width: auto;
 
     &:hover {
       color: $picnic-error;
-      }
     }
+  }
 
   h1 + .close {
-    margin: .2em;
-    }
+    margin: 0.2em;
+  }
 
   h2 + .close {
-    margin: .1em;
-    }
+    margin: 0.1em;
+  }
 
   .dangerous {
     background: $picnic-error;
     float: right;
-    }
   }
+}

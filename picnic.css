@@ -466,19 +466,11 @@ button,
   :focus[type=submit], .dropimage:focus {
     box-shadow: inset 0 0 0 99em rgba(255, 255, 255, 0.2);
     border: 0; }
-  button.pseudo:hover,
-  .pseudo.button:hover,
-  .pseudo:hover[type=submit], .pseudo.dropimage:hover, button.pseudo:focus,
-  .pseudo.button:focus,
-  .pseudo:focus[type=submit], .pseudo.dropimage:focus {
-    box-shadow: inset 0 0 0 99em var(--base01); }
   button.active,
   .active.button,
   .active[type=submit], .active.dropimage, button:active,
   .button:active,
-  :active[type=submit], .dropimage:active, button.pseudo:active,
-  .pseudo.button:active,
-  .pseudo:active[type=submit], .pseudo.dropimage:active {
+  :active[type=submit], .dropimage:active {
     box-shadow: inset 0 0 0 99em rgba(0, 0, 0, 0.2); }
   button[disabled],
   .button[disabled],
@@ -2201,7 +2193,7 @@ nav {
   background: var(--base01);
   box-shadow: 0 0 0.2em var(--base04);
   z-index: 10000;
-  transition: all .3s;
+  transition: all 0.3s;
   transform-style: preserve-3d; }
   nav .brand,
   nav .menu,
@@ -2222,7 +2214,7 @@ nav {
       vertical-align: middle; }
   nav .logo {
     height: 2em;
-    margin-right: .3em; }
+    margin-right: 0.3em; }
   nav .select::after {
     height: calc(100% - 1px);
     padding: 0;
@@ -2342,7 +2334,7 @@ select.stack {
   background: var(--base01);
   margin-bottom: 0.6em;
   padding: 0;
-  transition: all .3s ease; }
+  transition: all 0.3s ease; }
   .hidden.card, .modal .overlay ~ .hidden,
   :checked + .card,
   .modal .overlay ~ :checked + *,
@@ -2361,11 +2353,11 @@ select.stack {
   .modal .overlay ~ * section,
   .card > p,
   .modal .overlay ~ * > p {
-    padding: .6em .8em; }
+    padding: 0.6em 0.8em; }
   
   .card section,
   .modal .overlay ~ * section {
-    padding: .6em .8em 0; }
+    padding: 0.6em 0.8em 0; }
   .card hr, .modal .overlay ~ * hr {
     border: none;
     height: 1px;
@@ -2393,7 +2385,7 @@ select.stack {
     .card header:last-child, .modal .overlay ~ * header:last-child {
       border-bottom: 0; }
   .card footer, .modal .overlay ~ * footer {
-    padding: .8em; }
+    padding: 0.8em; }
   .card p, .modal .overlay ~ * p {
     margin: 0.3em 0; }
     .card p:first-child, .modal .overlay ~ * p:first-child {
@@ -2407,18 +2399,18 @@ select.stack {
     padding-right: 2.5em; }
   .card .close, .modal .overlay ~ * .close {
     position: absolute;
-    top: .4em;
-    right: .3em;
+    top: 0.4em;
+    right: 0.3em;
     font-size: 1.2em;
-    padding: 0 .5em;
+    padding: 0 0.5em;
     cursor: pointer;
     width: auto; }
     .card .close:hover, .modal .overlay ~ * .close:hover {
       color: var(--base08); }
   .card h1 + .close, .modal .overlay ~ * h1 + .close {
-    margin: .2em; }
+    margin: 0.2em; }
   .card h2 + .close, .modal .overlay ~ * h2 + .close {
-    margin: .1em; }
+    margin: 0.1em; }
   .card .dangerous, .modal .overlay ~ * .dangerous {
     background: var(--base08);
     float: right; }
